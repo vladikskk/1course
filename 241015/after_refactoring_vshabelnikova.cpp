@@ -1,22 +1,28 @@
 #include <cmath>
 #include <iostream>
 
-int main(int argc, char* argv[]){
+int main(){
 	double x, s, s2;
-	std::cout<<"Введите угол"<<endl;
-	std::cin>>x;
-	if  ( cos((double)2*x)!=1){
-		s=(1+sin((double)2*x))/(1-cos((double)2*x));
-		std::cout<<"F(x1)="<<s<<endl;
+
+	std::cout << "Введите угол" << std::endl;
+	std::cin >> x;
+
+	double cos2x = cos(2 * x);
+	if  (cos2x != 1){
+		s = (1 + sin(2 * x)) / (1 - cos2x);
+		std::cout << "F(x1)= " << s << std::endl;
 	}
-	else if ( cos((double)2*x)==1)
-		std::cout<<"Неверный ввод для F(x1) "<<endl;
-	if  (tan((double)x)!=1){
-		s2=(1+tan((double)x)*tan((double)x))/(1-tan((double)x)*tan((double)x));
-		std::cout<<"F(X2)="<<s2<<endl;
+	else
+		std::cout << "Неверный ввод для F(x1) " << std::endl;
+
+	double tanx = tan(x)
+	if  (tanx != 1){
+		s2 = (1 + tanx * tanx) / (1 - x * tanx);
+		std::cout << "F(X2)= " << s2 << std::endl;
 	}
-	else if (tan((double)x)==1)
-		std::cout<<"Неверный ввод для F(x2) "<<endl;
-system ("pause");
-return 0;
+	else 
+		std::cout << "Неверный ввод для F(x2) " << std::endl;
+
+	system ("pause");
+	return 0;
 }
