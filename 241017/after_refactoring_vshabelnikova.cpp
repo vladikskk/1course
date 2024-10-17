@@ -1,8 +1,8 @@
 #include <iostream>
 
 int main(){
-	double angle;
 
+	double angle;
 	std::cout << "Введите угол" << std::endl;
 	std::cin >> angle;
 
