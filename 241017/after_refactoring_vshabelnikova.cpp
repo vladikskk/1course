@@ -26,6 +26,5 @@ int main(){
 	}
 	else std::cout << "Неверный ввод для F(x2) " << std::endl;
 
-	system ("pause");
 	return 0;
 }
