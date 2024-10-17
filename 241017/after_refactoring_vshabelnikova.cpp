@@ -16,12 +16,12 @@ int main(){
 	}
 	else std::cout << "Неверный ввод для F(x1) " << std::endl;
 
-	double result_f2, tanx = tan(x);
+	double result_f2;
 	if  (tanx != 1){
 		result_f2 = 
-		(1 + tanx * tanx) 
+		(1 + tan(x) * tan(x)) 
 		/ 
-		(1 - x * tanx);
+		(1 - x * tan(x));
 		std::cout << "F(x2)= " << result_f2 << std::endl;
 	}
 	else std::cout << "Неверный ввод для F(x2) " << std::endl;
